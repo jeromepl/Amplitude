@@ -1,4 +1,4 @@
-# Amplitude
+# Ampl!tude
 Computer Science and Mathematics DEC Final Project
 Realised with Charlotte Sarrazin
 
