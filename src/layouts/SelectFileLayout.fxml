@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="SelectBox" prefHeight="525.0" prefWidth="591.0" stylesheets="@../resources/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="logo" fitHeight="253.0" fitWidth="325.0" layoutX="133.0" layoutY="20.0">
+         <image>
+            <Image url="@../resources/logo.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutY="247.0" prefHeight="278.0" prefWidth="591.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="247.0">
+         <children>
+            <Label text="Welcome to Ampl!tude, the amazing tool to create animations reactive to music!">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="591.0">
+               <children>
+                  <Label text="New here? Take a look at ">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label id="Tutorial" onMouseClicked="#tutorialClicked" text="the tutorial." textFill="#3c64bf" underline="true" />
+               </children>
+            </HBox>
+            <Label text="Otherwise, select one of the two options below:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER_LEFT" prefHeight="256.0" prefWidth="511.0">
+               <children>
+                  <RadioButton fx:id="rb1" mnemonicParsing="false" selected="true" text="Create a new project with a sound file">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="radioGroup1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <HBox alignment="CENTER" prefHeight="63.0" prefWidth="370.0">
+                     <children>
+                        <TextField fx:id="tf1" prefHeight="25.0" prefWidth="290.0" />
+                        <Button mnemonicParsing="false" onAction="#browse1Pressed" text="Browse">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <RadioButton fx:id="rb2" mnemonicParsing="false" text="Open an existing project" toggleGroup="$radioGroup1" />
+                  <HBox alignment="CENTER" prefHeight="63.0" prefWidth="370.0">
+                     <children>
+                        <TextField fx:id="tf2" prefHeight="25.0" prefWidth="290.0" />
+                        <Button mnemonicParsing="false" onAction="#browse2Pressed" text="Browse">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openPressed" text="Open" />
+            <StackPane prefHeight="34.0" prefWidth="370.0">
+               <children>
+                  <Label fx:id="error" text="An error occured while loading the file! TRY AGAIN" visible="false" />
+                  <Label fx:id="sfError" text="Please select a file before pressing the &quot;Open&quot; button" visible="false" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

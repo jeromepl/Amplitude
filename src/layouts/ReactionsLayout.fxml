@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root alignment="CENTER" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Button fx:id="addReaction" mnemonicParsing="false" onAction="#addReaction" text="Add a reaction" />
+      <Label fx:id="noSelection" alignment="CENTER" prefWidth="155.0" text="Select a shape to see its reactions or to add reactions to it" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+	</children>
+</fx:root>

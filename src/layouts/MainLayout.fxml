@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import nodes.*?>
+
+<AnchorPane stylesheets="@../resources/application.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   	  <TopMenuBar fx:id="topMenuBar" prefHeight="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+   	  <PlayerPane fx:id="playerPane" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0"/>
+      <VideoPane fx:id="videoPane" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="82.0"/>
+      <Label text="Add/Modify the Shape's Reactions:" underline="true" textAlignment="CENTER" wrapText="true" prefHeight="80.0" prefWidth="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0" >
+      		<font>
+		    	<Font size="15.0" />
+		    </font>
+      </Label>
+      <ReactionsPane fx:id="reactionsPane" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="190.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0" AnchorPane.bottomAnchor="0.0"/>
+      <ShapesPane fx:id="shapesPane" alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="240.0" minWidth="220.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0"/>
+      <EditingPane fx:id="editingPane" prefWidth="240.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="282.0" AnchorPane.bottomAnchor="0.0"/>
+      <HBox fx:id="saveIndicator" alignment="CENTER" prefHeight="35.0" prefWidth="96.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <Label text="Saving" />
+            <ProgressIndicator />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

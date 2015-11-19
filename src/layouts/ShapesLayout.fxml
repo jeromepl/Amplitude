@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" type="javafx.scene.layout.FlowPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#rectangleClicked" prefHeight="85.0" prefWidth="85.0">
+         <FlowPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+         </FlowPane.margin>
+         <graphic>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: black;" width="50.0" />
+         </graphic></Button>
+      	<Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#circleClicked" prefHeight="85.0" prefWidth="85.0">
+         <FlowPane.margin>
+            <Insets right="10.0" />
+         </FlowPane.margin>
+         <graphic>
+            <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: black;" />
+         </graphic></Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#triangleClicked" prefHeight="85.0" prefWidth="85.0">
+         <graphic>
+            <Polygon fill="DODGERBLUE" scaleX="0.5" scaleY="0.5" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: black;">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+         </graphic></Button>
+	</children>
+</fx:root>

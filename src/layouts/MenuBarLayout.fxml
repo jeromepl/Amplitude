@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="javafx.scene.control.MenuBar" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<menus>
+		<Menu mnemonicParsing="false" text="File">
+			<items>
+            <MenuItem mnemonicParsing="false" onAction="#savePressed" text="Save">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator></MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#saveAsPressed" text="Save As" />
+            <MenuItem mnemonicParsing="false" onAction="#newPressed" text="New">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator></MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#importSoundPressed" text="Import Sound" />
+            <MenuItem mnemonicParsing="false" onAction="#openPressed" text="Open">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator></MenuItem>
+				<MenuItem mnemonicParsing="false" onAction="#exitPressed" text="Close" />
+			</items>
+		</Menu>
+		<Menu mnemonicParsing="false" text="Help">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#tutorialPressed" text="Tutorial" />
+            <Menu mnemonicParsing="false" text="Presets">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#preset1Pressed" text="Preset 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#preset2Pressed" text="Preset 2" />
+                  <MenuItem mnemonicParsing="false" onAction="#preset3Pressed" text="Preset 3" />
+              </items>
+            </Menu>
+         </items></Menu>
+	</menus>
+</fx:root>

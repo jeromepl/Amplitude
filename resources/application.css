@@ -1,0 +1,148 @@
+.root {
+	-fx-background-color: darkgray;
+	-fx-cursor: hand ;	
+	-fx-text-fill: black;
+}
+#SelectBox {
+	-fx-background-color: lightgray;
+	-fx-cursor: hand;
+}
+
+.check-box {
+  -fx-font-size: 11pt;
+   -fx-font-family: "Arial";
+}
+
+.radio-button {
+	-fx-font-size: 11pt;
+   -fx-font-family: "Arial";
+}
+
+.combo-box {
+	-fx-font-size: 11pt;
+   -fx-font-family: "Arial";
+}
+
+/*
+ * The Text Fields
+ */
+.text-field {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-shape: "M 0 0 V 20 H 40 V 0 z"; 
+    -fx-border-color: black;
+}
+/*
+ * The labels
+ */
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+#Tutorial{
+	-fx-text-fill: blue;
+}
+#note{
+	-fx-font-size: 9pt;
+}
+
+/*
+ * The radio Button
+ */
+.radio-button {
+	-fx-font-family: "Arial";
+}
+.combo-box{ 
+	-fx-shape: "M 0 0 V 20 H 40 V 0 z"; 
+	-fx-border-color: #87cefa;
+	-fx-border-width: 2 ; 
+}
+ .color-picker{
+ 	-fx-shape: "M 0 0 V 20 H 40 V 0 z"; 
+	-fx-border-color: #87cefa;
+	-fx-border-width: 2; 
+ }
+/*
+ * The slider
+ */
+.slider .thumb{
+	-fx-background-color:#444444;
+	-fx-size: 0.7;
+	
+}
+
+/*
+ * The menu bar
+ */
+ 
+ .menu-bar {
+    -fx-background-color: lightgray;
+}
+.context-menu {
+    -fx-background-color: gray;
+}
+
+.menu-bar .label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: black;
+ 
+}
+
+/*
+ * The progress bar
+ */
+.progress-bar .bar {
+	-fx-background-color: #87cefa;
+	-fx-background-radius: 2;
+	-fx-border-width: 2;
+	-fx-box-border: black;
+	
+}
+.progress-bar .track{
+	-fx-background-radius: 2;
+	-fx-shape: "M 0 0 V 20 H 40 V 0 z"; 
+	
+}
+
+/*
+ * The buttons
+ */
+.button {  
+    -fx-border-color: #87cefa;
+    -fx-border-width: 2;
+    -fx-border-style:solid;
+    -fx-background-radius: 0;
+    -fx-background-color: gainsboro;
+    -fx-font-family: "Franklin Gothic Book";
+    -fx-font-size: 12pt;
+    -fx-text-fill: black;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ffffff;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #3a3a3a;
+  -fx-text-fill: #ffffff;
+}
+
+.button:focused {
+    -fx-border-color: #87cefa;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}

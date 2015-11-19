@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="610.0" stylesheets="@../resources/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Create/Modify a Reaction" underline="true">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="600.0">
+         <children>
+            <Label text="Reaction Type:" />
+            <ComboBox fx:id="type" onAction="#typeChanged" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin></ComboBox>
+            <Label text="Shape Property Affected:" />
+            <ComboBox fx:id="property" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></ComboBox>
+         </children>
+      </HBox>
+      <Label prefHeight="120.0" prefWidth="491.0" text="Enter the minimum and maximum value that the affected property of the shape will have. For a color property, enter a value between 0 and 255. Otherwise, the value should be a ratio of the current value (ex: 1.5 as a maximum value means that the shape will have at most a 1.5 times bigger size)" textAlignment="CENTER" wrapText="true">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0">
+         <children>
+            <Label text="Minimum Value:" />
+            <TextField fx:id="minValue" prefHeight="25.0" prefWidth="53.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin></TextField>
+            <Label text="Maximum Value:" />
+            <TextField fx:id="maxValue" prefHeight="25.0" prefWidth="53.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <Label fx:id="freqText" text="Enter the range of frequencies that will affect the shape's property:">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <HBox fx:id="freqContainer" alignment="CENTER" prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label text="From:" />
+            <TextField fx:id="minFreq" prefHeight="25.0" prefWidth="53.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin></TextField>
+            <Label text="To:" />
+            <TextField fx:id="maxFreq" prefHeight="25.0" prefWidth="53.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></TextField>
+            <Label text="Hertz" />
+         </children>
+      </HBox>
+      <Label fx:id="error" prefHeight="50.0" prefWidth="600.0" text="Please only double values in the minimum and maximum fields, and only integers in the frequency range fields." textAlignment="CENTER" wrapText="true" />
+      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#deletePressed" text="Delete Reaction">
+               <HBox.margin>
+                  <Insets right="320.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancelPressed" text="Cancel">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="apply" mnemonicParsing="false" onAction="#applyPressed" text="Apply" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
