@@ -8,3 +8,9 @@ For example one could add a rectangle to the scene and make its height move base
 You can download the runnable jar file here: https://drive.google.com/file/d/0B7w5FuHl8_jkNzVnbm5tM1Z6cEk/view?usp=sharing
 
 Once open, you can open 3 presets to experiment with this software or open up the tutorial which will give you basic guidelines as to how to create your fist project!
+
+Created using JavaFX and Minim (adapted to Java)
+
+![Ampl!tude Splash Screen](http://www.nodynotes.com/demo_imgs/amp_splash.png)
+
+![Ampl!tude Main Screen](http://www.nodynotes.com/demo_imgs/amp_main.png)
